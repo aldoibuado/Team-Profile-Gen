@@ -40,7 +40,7 @@ function start () {
             {
                 type: 'input',
                 name: 'managerName',
-                message: "what is the manager's name?"
+                message: "what is the manager's Name?"
             },
             {
                 type: 'input',
@@ -63,6 +63,66 @@ function start () {
             workTeam.push(manager)
             makeTeam();
         })
+    }
+
+    function makeEngineer() {
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'engineerName',
+                message: "what is the engineer's Name?"
+            },
+            {
+                type: 'input',
+                name: 'engineerId',
+                message: "what is the engineer's Id?"
+            },
+            {
+                type: 'input',
+                name: 'engineerEmail',
+                message: "what is the engineer's Email?"
+            },
+            {
+                type: 'input',
+                name: 'engineerGithub',
+                message: "what is the engineer's Github?"
+            },
+        ]).then(function(response){
+            const engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerGithub);
+            console.log(engineer);
+            workTeam.push(engineer)
+            makeTeam();
+        }) 
+    }
+
+    function makeIntern() {
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'internName',
+                message: "what is the intern's Name?"
+            },
+            {
+                type: 'input',
+                name: 'internId',
+                message: "what is the intern's Id?"
+            },
+            {
+                type: 'input',
+                name: 'internEmail',
+                message: "what is the intern's Email?"
+            },
+            {
+                type: 'input',
+                name: 'internSchool',
+                message: "what is the intern's School?"
+            },
+        ]).then(function(response){
+            const intern = new Intern(response.internName, response.internId, response.internEmail, response.internSchool);
+            console.log(intern);
+            workTeam.push(intern)
+            makeTeam();
+        }) 
     }
     function generateHTML() {
         console.log('generated')

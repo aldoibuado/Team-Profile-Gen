@@ -16,7 +16,7 @@ test('testing to see if getGithub method works', () => {
 
 test('testing to see if getRole method works', () => {
     const role = 'Engineer'
-    const employee = new Engineer('Aldo', 30, 'aldo.ibuado@gmail.com')
+    const employee = new Engineer('Aldo', 30, 'aldo.ibuado@gmail.com', 'aldoibuado')
 
     expect(employee.getRole()).toBe(role);
 });

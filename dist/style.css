@@ -1,0 +1,29 @@
+.employees {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.card {
+   box-shadow: 10px 5px 5px grey;
+    width: 18rem;
+    border: 15px solid darkgrey;
+    margin: 50px auto;
+}   
+
+.card-header {
+  background: blue;
+  color: whitesmoke;
+}
+
+.header {
+    padding: 80px;
+  text-align: center;
+  background: linear-gradient(to right, #00cc66 0%, #ff33cc 100%);
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+
+

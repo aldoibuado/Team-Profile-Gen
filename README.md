@@ -25,6 +25,7 @@
 
   ## Usage
   The user will input Node index.js and answer the questions when prompted to be able to build the team profiles.
+  Here is a link https://youtu.be/BIgFkjxxog8 that displays how the application functions.
 
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br/>
